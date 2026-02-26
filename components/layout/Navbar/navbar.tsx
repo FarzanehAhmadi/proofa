@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { NavMenu } from "@/components/layout/Navbar/nav-menu";
 import { NavigationSheet } from "@/components/layout/Navbar/navigation-sheet";
 import Logo from "@/components/ui/logo";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,6 +33,7 @@ const Navbar = () => {
           {/* <Button className="hidden sm:inline-flex" variant="outline">
             Sign In
           </Button> */}
+          <ModeToggle />
           <Button>Contact Us</Button>
 
           {/* Mobile Menu */}
