@@ -3,10 +3,27 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
-export default function Logo() {
-  const { theme } = useTheme();
+interface LogoProps {
+  size?: "sm" | "md" | "lg";
+}
 
-  const logoSrc = theme === "dark" ? "/Logo-dark.svg" : "/Logo.svg";
+export default function Logo({ size = "md" }: LogoProps) {
+  const { resolvedTheme } = useTheme();
 
-  return <Image src={logoSrc} width={124} height={32} alt="Logo" />;
+  const logoSrc = resolvedTheme === "dark" ? "/Logo-dark.svg" : "/Logo.svg";
+
+  const dimensions = {
+    sm: { width: 80, height: 20 },
+    md: { width: 124, height: 32 },
+    lg: { width: 180, height: 46 },
+  };
+
+  return (
+    <Image
+      src={logoSrc}
+      width={dimensions[size].width}
+      height={dimensions[size].height}
+      alt="Logo"
+    />
+  );
 }

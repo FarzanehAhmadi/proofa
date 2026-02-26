@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { NavMenu } from "@/components/layout/Navbar/nav-menu";
 import { NavigationSheet } from "@/components/layout/Navbar/navigation-sheet";
-import Image from "next/image";
 import Logo from "@/components/ui/logo";
 
 const Navbar = () => {

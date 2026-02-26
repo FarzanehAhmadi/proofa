@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/sheet";
 
 import { NavMenu } from "@/components/layout/Navbar/nav-menu";
-import Image from "next/image";
 import Logo from "@/components/ui/logo";
 
 export const NavigationSheet = () => {
@@ -25,7 +24,7 @@ export const NavigationSheet = () => {
         </Button>
       </SheetTrigger>
       <SheetContent className="px-6 py-3">
-        <Logo />
+        <Logo size="sm" />
         <NavMenu className="mt-6 [&>div]:h-full" orientation="vertical" />
       </SheetContent>
     </Sheet>
