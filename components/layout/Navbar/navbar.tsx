@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { NavMenu } from "@/components/layout/Navbar/nav-menu";
 import { NavigationSheet } from "@/components/layout/Navbar/navigation-sheet";
 import Image from "next/image";
+import Logo from "@/components/ui/logo";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,8 +24,8 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex h-full max-w-(--breakpoint-xl) items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Image src="/Logo.svg" width={124} height={32} alt="Logo" />
-
+        {/* <Image src="/Logo.svg" width={124} height={32} alt="Logo" /> */}
+        <Logo />
         {/* Desktop Menu */}
         <NavMenu className="hidden md:block" />
 
