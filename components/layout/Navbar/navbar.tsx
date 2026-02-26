@@ -5,6 +5,7 @@ import { NavMenu } from "@/components/layout/Navbar/nav-menu";
 import { NavigationSheet } from "@/components/layout/Navbar/navigation-sheet";
 import Logo from "@/components/ui/logo";
 import { ModeToggle } from "@/components/ui/mode-toggle";
+import Link from "next/link";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,15 +25,13 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex h-full max-w-(--breakpoint-xl) items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* <Image src="/Logo.svg" width={124} height={32} alt="Logo" /> */}
-        <Logo />
+        <Link href="/" aria-label="Go to homepage">
+          <Logo />
+        </Link>
         {/* Desktop Menu */}
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-3">
-          {/* <Button className="hidden sm:inline-flex" variant="outline">
-            Sign In
-          </Button> */}
           <ModeToggle />
           <Button>Contact Us</Button>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Unbounded, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
+import Navbar from "@/components/layout/Navbar/navbar";
 
 const headingFont = Unbounded({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${headingFont.variable} ${bodyFont.variable}`}
-      suppressHydrationWarning // Add this to ignore theme-related attribute mismatches
+      suppressHydrationWarning
     >
       <body className="font-sans antialiased">
         <ThemeProvider
@@ -37,8 +38,9 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          enableColorScheme={false} // Add this to prevent color-scheme style attribute
+          enableColorScheme={false}
         >
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
