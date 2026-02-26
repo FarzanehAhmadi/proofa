@@ -127,27 +127,116 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 
+  /* ========================= */
+  /* HEADINGS (Unbounded)      */
+  /* ========================= */
+
   h1 {
-    @apply font-heading text-[40px] leading-[120%] md:text-[56px] md:leading-[110%];
+    font-family: var(--font-heading);
+    font-weight: 400;
+    @apply text-[48px] leading-[110%] md:text-[56px];
+  }
+
+  /* If you need H1 Large */
+  .h1-large {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    @apply text-[64px] leading-[110%] hidden md:block;
   }
 
   h2 {
-    @apply font-heading text-[32px] leading-[120%] md:text-[40px];
+    font-family: var(--font-heading);
+    font-weight: 400;
+    @apply text-[32px] leading-[120%] md:text-[40px];
   }
 
+  /* ========================= */
+  /* SUB & LOWER HEADINGS      */
+  /* ========================= */
+
   h3 {
-    @apply font-heading text-[24px] leading-[150%];
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[24px] leading-[150%];
   }
 
   h4 {
-    @apply font-heading text-[20px] leading-[150%];
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[20px] leading-[150%];
   }
 
   h5 {
-    @apply font-heading text-[16px] leading-[140%];
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[16px] leading-[140%];
+  }
+  /* Sub Headings */
+
+  .sub1 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
   }
 
+  .sub2 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  /* ========================= */
+  /* BODY                      */
+  /* ========================= */
+
   p {
+    font-family: var(--font-body);
+    font-weight: 500;
     @apply text-[16px] leading-[140%];
+  }
+
+  .body-l {
+    @apply text-[18px] leading-[140%];
+  }
+
+  .body-m {
+    @apply text-[16px] leading-[140%];
+  }
+
+  .body-s {
+    @apply text-[14px] leading-[140%];
+  }
+
+  .body-xs {
+    @apply text-[12px] leading-[120%];
+  }
+
+  /* ========================= */
+  /* BUTTON TYPOGRAPHY         */
+  /* ========================= */
+
+  .btn-l {
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[16px] leading-[130%];
+  }
+
+  .btn-m {
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[14px] leading-[130%];
+  }
+
+  .btn-s {
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[12px] leading-[130%];
+  }
+
+  .btn-xs {
+    font-family: var(--font-body);
+    font-weight: 700;
+    @apply text-[10px] leading-[120%];
   }
 }

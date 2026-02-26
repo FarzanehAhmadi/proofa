@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Unbounded } from "next/font/google";
+import { Unbounded, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const bodyFont = Geist({
-  variable: "--font-body",
-  subsets: ["latin"],
-});
-
-const monoFont = Geist_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
-
 const headingFont = Unbounded({
-  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
+  variable: "--font-heading",
+});
+
+const bodyFont = Montserrat({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -30,18 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`
-          ${bodyFont.variable}
-          ${monoFont.variable}
-          ${headingFont.variable}
-          font-sans
-          antialiased
-        `}
-      >
-        {children}
-      </body>
+    <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
