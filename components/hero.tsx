@@ -11,7 +11,7 @@ export default function Hero() {
           "mask-[radial-gradient(500px_circle_at_center,white,transparent)]",
           "inset-x-0 h-full skew-y-12",
         )}
-        duration={3}
+        duration={1}
         maxOpacity={0.1}
         numSquares={30}
       />
