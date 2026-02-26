@@ -1,0 +1,85 @@
+Headings{
+
+H1_large
+font: unbounded
+regular
+font-size: 64 px; line-height: 110%;
+
+H1_large_mob
+font: unbounded
+regular
+font-size: 48 px; line-height: 110%;
+H1
+font: unbounded
+regular
+font-size: 56 px; line-height: 110%;
+H1_mob
+font: unbounded
+regular
+font-size: 40 px; line-height: 120%;
+H2
+font: unbounded
+regular
+font-size: 40 px; line-height: 120%;
+H2_mob
+font: unbounded
+regular
+font-size: 32 px; line-height: 120%;
+H3
+font: montserrat 
+bold
+font-size: 24 px; line-height: 150%;
+H4
+font: montserrat
+bold
+font-size: 20 px; line-height: 150%;
+H5
+font: montserrat
+bold
+font-size: 16 px; line-height: 140%;
+Sub1 
+font: montserrat
+medium
+font-size: 20 px; line-height: 150%;
+Sub2 
+montserrat
+medium
+font-size: 18 px; line-height: 150%;
+}
+Body{
+L
+font:montserrat
+medium
+font-size: 18 px; line-height: 140%;
+M
+font:montserrat
+medium
+font-size: 16 px; line-height: 140%;
+S
+font:montserrat
+medium
+font-size: 14 px; line-height: 140%;
+XS
+font:montserrat
+medium
+font-size: 12 px; line-height: 120%;
+}
+Button{
+
+L
+font:montserrat
+bold
+font-size: 16 px; line-height: 130%;
+M
+font:montserrat
+bold
+font-size: 14 px; line-height: 130%;
+S
+font:montserrat
+bold
+font-size: 12 px; line-height: 130%;
+XS
+font:montserrat
+bold
+font-size: 10 px; line-height: 120%;
+}
