@@ -1,3 +1,10 @@
+import Image from "next/image";
+import TypographyDemo from "./typography";
+
 export default function Home() {
-  return <div className="bg-primary text-primary-foreground">hello</div>;
+  return (
+    <div>
+      <TypographyDemo />
+    </div>
+  );
 }
