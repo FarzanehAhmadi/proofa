@@ -16,32 +16,31 @@ export default function Hero() {
         numSquares={30}
       />
       <div className="flex min-h-screen items-center justify-center">
-        <div className="mx-auto grid w-full max-w-(--breakpoint-xl) gap-12 px-6 py-12 lg:grid-cols-2">
-          <div>
-            <h1 className="mt-6 max-w-[17ch] font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem]">
-              Post-Quantum Blockchain Consultancy & Solutions
-            </h1>
-            <p className="mt-6 max-w-[60ch] text-foreground/80 sm:text-lg">
-              Expert post-quantum consultancy for blockchain and cryptography.
-              We help organisations navigate blockchain technology and prepare
-              for the quantum computing era with quantum-resistant solutions.
-              Book a Consultation Explore Services
-            </p>
-            <div className="mt-12 flex items-center gap-4">
-              <Button className="rounded-full text-base" size="lg">
-                Book a Consultation <ArrowRight className="h-5! w-5!" />
-              </Button>
-              <Button
-                className="rounded-full text-base shadow-none"
-                size="lg"
-                variant="outline"
-              >
-                Explore Services
-              </Button>
-            </div>
-          </div>
+        <div className="mx-auto w-full max-w-(--breakpoint-xl) px-6 py-12 text-center">
+          <h1 className="mx-auto mt-6 max-w-[17ch] font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem]">
+            ZKP Blockchain Consultancy & Solutions
+          </h1>
 
-          <div className="aspect-video w-full rounded-xl bg-accent" />
+          <p className="mx-auto mt-6 max-w-[60ch] text-foreground/80 sm:text-lg">
+            Expert post-quantum consultancy for blockchain and cryptography. We
+            help organisations navigate blockchain technology and prepare for
+            the quantum computing era with quantum-resistant solutions. Book a
+            Consultation Explore Services
+          </p>
+
+          <div className="mt-12 flex justify-center gap-4">
+            <Button className="rounded-full text-base" size="lg">
+              Book a Consultation <ArrowRight className="h-5! w-5!" />
+            </Button>
+
+            <Button
+              className="rounded-full text-base shadow-none"
+              size="lg"
+              variant="outline"
+            >
+              Explore Services
+            </Button>
+          </div>
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 h-16 transition-all duration-300 ${
-        scrolled ? "bg-transparent backdrop-blur-md border-b" : "bg-background"
+        scrolled ? "bg-transparent backdrop-blur-md" : "bg-background"
       }`}
     >
       <div className="mx-auto flex h-full max-w-(--breakpoint-xl) items-center justify-between px-4 sm:px-6 lg:px-8">
