@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@portabletext/react": "^6.0.3",
     "@radix-ui/react-visually-hidden": "^1.2.4",
     "@sanity/client": "^7.17.0",
     "@sanity/image-url": "^2.0.3",
