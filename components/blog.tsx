@@ -78,7 +78,7 @@ export default function Blog({ posts }: BlogProps) {
             setVisiblePosts(9);
           }}
         >
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger className="w-45">
             <SelectValue placeholder="Category" />
           </SelectTrigger>
 
