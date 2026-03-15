@@ -180,6 +180,19 @@ const components = {
       </a>
     ),
   },
+  list: {
+    bullet: ({ children }: any) => (
+      <ul className="list-disc pl-6 my-4">{children}</ul>
+    ),
+    number: ({ children }: any) => (
+      <ol className="list-decimal pl-6 my-4">{children}</ol>
+    ),
+  },
+
+  listItem: {
+    bullet: ({ children }: any) => <li className="mb-1">{children}</li>,
+    number: ({ children }: any) => <li className="mb-1">{children}</li>,
+  },
 };
 
 export default async function BlogPostPage({ params }: PageProps) {
