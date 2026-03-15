@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import Image from "next/image";
@@ -18,12 +19,10 @@ export default function Logo({ size = "md" }: LogoProps) {
     lg: { width: 180, height: 46 },
   };
 
-  // After mounting, we can safely show the theme-dependent UI
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // During SSR and initial client render, show a placeholder with same dimensions
   if (!mounted) {
     return (
       <div
@@ -43,6 +42,7 @@ export default function Logo({ size = "md" }: LogoProps) {
       width={dimensions[size].width}
       height={dimensions[size].height}
       alt="Logo"
+      priority
     />
   );
 }
