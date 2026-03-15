@@ -15,26 +15,28 @@ export default function Hero() {
         maxOpacity={0.1}
         numSquares={30}
       />
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="mx-auto w-full max-w-(--breakpoint-xl) px-6 py-12 text-center">
-          <h1 className="mx-auto mt-6 max-w-[17ch] font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem]">
+      <div className="flex min-h-screen items-center justify-center bg-background">
+        <div className="mx-auto w-full max-w-6xl px-5 py-10 text-center sm:px-8 sm:py-16 md:max-w-7xl lg:py-20">
+          <h1 className="mx-auto mt-4 max-w-[18ch] font-bold text-3xl leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem]">
             ZKP Blockchain Consultancy & Solutions
           </h1>
 
-          <p className="mx-auto mt-6 max-w-[60ch] text-foreground/80 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-[65ch] text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl">
             Expert post-quantum consultancy for blockchain and cryptography. We
             help organisations navigate blockchain technology and prepare for
-            the quantum computing era with quantum-resistant solutions. Book a
-            Consultation Explore Services
+            the quantum computing era with quantum-resistant solutions.
           </p>
 
-          <div className="mt-12 flex justify-center gap-4">
-            <Button className="rounded-full text-base" size="lg">
-              Book a Consultation <ArrowRight className="h-5! w-5!" />
+          <div className="mt-10 flex flex-col items-center gap-4 sm:mt-12 sm:flex-row sm:justify-center sm:gap-6">
+            <Button
+              className="w-full rounded-full text-base sm:w-auto sm:text-lg"
+              size="lg"
+            >
+              Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
 
             <Button
-              className="rounded-full text-base shadow-none"
+              className="w-full rounded-full text-base shadow-none sm:w-auto sm:text-lg"
               size="lg"
               variant="outline"
             >
