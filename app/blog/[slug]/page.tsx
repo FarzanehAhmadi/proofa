@@ -190,8 +190,40 @@ const components = {
   },
 
   listItem: {
-    bullet: ({ children }: any) => <li className="mb-1">{children}</li>,
-    number: ({ children }: any) => <li className="mb-1">{children}</li>,
+    bullet: ({ children }: any) => {
+      const text = children
+        .map((child: any) => {
+          if (typeof child === "string") return child;
+          if (child?.props?.text) return child.props.text;
+          return "";
+        })
+        .join("");
+
+      const processedHtml = renderLatexInText(text);
+
+      if (processedHtml !== text) {
+        return <li dangerouslySetInnerHTML={{ __html: processedHtml }} />;
+      }
+
+      return <li>{children}</li>;
+    },
+    number: ({ children }: any) => {
+      const text = children
+        .map((child: any) => {
+          if (typeof child === "string") return child;
+          if (child?.props?.text) return child.props.text;
+          return "";
+        })
+        .join("");
+
+      const processedHtml = renderLatexInText(text);
+
+      if (processedHtml !== text) {
+        return <li dangerouslySetInnerHTML={{ __html: processedHtml }} />;
+      }
+
+      return <li>{children}</li>;
+    },
   },
 };
 
