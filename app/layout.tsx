@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Unbounded, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
-import Navbar from "@/components/layout/Navbar/navbar";
+import NavbarWrapper from "@/components/layout/Navbar/NavbarWrapper";
 
 const headingFont = Unbounded({
   subsets: ["latin"],
@@ -40,7 +40,8 @@ export default function RootLayout({
           disableTransitionOnChange
           enableColorScheme={false}
         >
-          <Navbar />
+          {/* Use the wrapper instead of the raw Navbar */}
+          <NavbarWrapper />
           {children}
         </ThemeProvider>
       </body>
