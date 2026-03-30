@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FileText, Wallet, PenTool, Eye } from "lucide-react";
+import Link from "next/link";
 
 export default function Integrations() {
   return (
@@ -30,11 +31,15 @@ export default function Integrations() {
             </div>
             <div className="mt-4">
               {integration.status === "live" ? (
-                <Button className="mt-6 cursor-pointer">
-                  Connect <ArrowUpRight />
+                <Button asChild variant="default" className="mt-6">
+                  <Link href={integration.href}>
+                    Open <ArrowUpRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               ) : (
-                <span className="text-gray-400 text-sm">Coming soon</span>
+                <span className="mt-6 inline-block text-sm text-gray-400">
+                  Coming soon
+                </span>
               )}
             </div>
           </div>
@@ -49,7 +54,7 @@ const integrations = [
     title: "Proof of Existence",
     description:
       "Upload a file and register its hash on the blockchain to prove ownership.",
-    href: "/dapp/proof",
+    href: "/dapps/proof",
     status: "live",
     icon: FileText,
   },
@@ -57,7 +62,7 @@ const integrations = [
     title: "Wallet Connect",
     description:
       "Connect your Web3 wallet to interact with blockchain-based tools.",
-    href: "/dapp/wallet",
+    href: "/dapps/wallet",
     status: "live",
     icon: Wallet,
   },
@@ -65,7 +70,7 @@ const integrations = [
     title: "Message Signing",
     description:
       "Sign messages to verify your identity or approve actions securely.",
-    href: "/dapp/sign",
+    href: "/dapps/sign",
     status: "coming",
     icon: PenTool,
   },
@@ -73,7 +78,7 @@ const integrations = [
     title: "zk Proof Demo",
     description:
       "Try a zero-knowledge proof demo to see privacy-preserving proofs in action.",
-    href: "/dapp/zk",
+    href: "/dapps/zk",
     status: "coming",
     icon: Eye,
   },

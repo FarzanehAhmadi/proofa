@@ -1,12 +1,9 @@
-// import ConnectWallet from "@/components/ConnectWallet";
 import Integrations from "@/components/integrations";
 
-export default function Home() {
+export default function DappHome() {
   return (
-    <main>
+    <main className="min-h-screen">
       <Integrations />
-      {/* <h1>My Web3 Experiment</h1>
-      <ConnectWallet /> */}
     </main>
   );
 }
