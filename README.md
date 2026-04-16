@@ -79,7 +79,7 @@ Proofa is a professional digital presence for a company working at the forefront
 # Clone the repository
 git clone https://github.com/yourusername/proofa.git
 cd proofa
-
+```
 # Install dependencies
 pnpm install
 # or
