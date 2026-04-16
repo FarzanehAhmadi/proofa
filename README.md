@@ -40,8 +40,11 @@ Tech Stack
 *   **Styling:** Tailwind CSS
     
 *   **UI Components:** shadcn/ui
+  
+*   **CMS:** sanity
     
 *   **Deployment:** Vercel
+
     
 Features (Planned & In Progress)
 ----------------------------------
@@ -56,6 +59,11 @@ Features (Planned & In Progress)
     
 *   Modular and scalable architecture
     
+#### Content Management
+
+The blog and content sections are powered by Sanity, a headless CMS that allows structured content management and dynamic content delivery.
+
+This enables non-technical users to manage blog posts and content while maintaining a flexible frontend architecture.
 
 Web3 Integration (Planned)
 -----------------------------
