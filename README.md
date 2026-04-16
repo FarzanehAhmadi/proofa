@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proofa
 
-## Getting Started
+A modern, minimal, and technically sophisticated website for a privacy-focused cryptography company.
 
-First, run the development server:
+Proofa specializes in **zero-knowledge proofs**, **smart contract engineering**, and **Web3 privacy infrastructure**. The website is designed to reflect academic rigor, cryptographic precision, and deep technical expertise — without the typical flashy blockchain aesthetic.
+
+---
+
+## ✨ Project Overview
+
+Proofa is a professional digital presence for a company working at the forefront of privacy-preserving technology. The design emphasizes **mathematical elegance**, **trust**, and **clarity** — values core to zero-knowledge cryptography.
+
+### Brand Positioning
+- Cryptographic proof engineering
+- Privacy-preserving computation
+- Zero-knowledge technology consulting & development
+- Secure Web3 infrastructure
+
+---
+
+## 🎨 Design Philosophy
+
+- **Minimal & Clean** UI
+- **Dark theme** as default (professional and focused)
+- Geometric spacing and structured typography
+- Subtle use of blue as primary accent color
+- High contrast for excellent readability
+- No excessive gradients, animations, or decorative elements
+
+**Logo Concept**: A chained double “O” symbol representing blockchain linkage and infinite trust verification.
+
+---
+
+## 📋 Website Sections
+
+- **Landing Hero** — Strong technical branding with impactful tagline
+- **About / Philosophy** — Mission and values in privacy infrastructure
+- **Expertise / Services**
+  - Zero-Knowledge Proof Development
+  - Smart Contract Engineering
+  - Web3 Privacy Solutions
+  - Cryptographic System Design
+- **Projects** — Showcase of technical work (with dedicated dynamic routes)
+- **Blog** — In-depth technical articles on cryptography, ZK, and privacy
+- **DApp Interaction** — Wallet connection + basic blockchain interaction demo
+- **Contact / Collaboration**
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Next.js 15** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui** component library
+
+### Development Practices
+- Modular & reusable component architecture
+- Static-first rendering (where possible)
+- Mobile-first responsive design
+- Future-proof for Web3 integration (wagmi, viem, etc.)
+
+### Styling
+- Global styles in `globals.css`
+- Layout management via `app/layout.tsx`
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 20+
+- pnpm / npm / yarn
+
+### Installation
 
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/yourusername/proofa.git
+cd proofa
+
+# Install dependencies
+pnpm install
 # or
-yarn dev
-# or
+npm install
+
+### Development
 pnpm dev
 # or
-bun dev
-```
+npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###PRoject structure
+proofa/
+├── app/
+│   ├── (site)/
+│   ├── blog/
+│   ├── projects/
+│   ├── dapp/
+│   └── layout.tsx
+├── components/
+│   ├── ui/          # shadcn/ui components
+│   ├── layout/
+│   └── sections/
+├── lib/
+├── public/
+├── styles/
+│   └── globals.css
+└── README.md
