@@ -5,7 +5,7 @@ Proofa is a modern web platform for a privacy-focused technology company special
 
 The project is built with a strong emphasis on clean architecture, minimal design, and cryptographic credibility. It aims to present Proofa as a serious engineering-driven brand operating at the intersection of research and industry.
 
-🚀 Overview
+Overview
 -----------
 
 Proofa represents:
@@ -21,7 +21,7 @@ Proofa represents:
 
 The website serves as both a company presence and a foundation for future Web3 applications.
 
-🧠 Vision
+Vision
 ---------
 
 Proofa is designed to communicate:
@@ -30,7 +30,7 @@ Proofa is designed to communicate:
 
 The platform focuses on conveying technical depth, mathematical rigor, and a minimal, professional aesthetic rather than typical “crypto-style” interfaces.
 
-🛠 Tech Stack
+Tech Stack
 -------------
 
 *   **Framework:** Next.js (App Router)
@@ -43,7 +43,7 @@ The platform focuses on conveying technical depth, mathematical rigor, and a min
     
 *   **Deployment:** Vercel
     
-✨ Features (Planned & In Progress)
+Features (Planned & In Progress)
 ----------------------------------
 
 *   Landing page with strong technical branding
@@ -57,7 +57,7 @@ The platform focuses on conveying technical depth, mathematical rigor, and a min
 *   Modular and scalable architecture
     
 
-🔗 Web3 Integration (Planned)
+Web3 Integration (Planned)
 -----------------------------
 
 The project will include:
@@ -70,7 +70,7 @@ The project will include:
     
 *   Integration with privacy-preserving protocols
     
- Deployment
+Deployment
 -------------
 
 The project is intended to be deployed on Vercel with a custom domain.
@@ -92,7 +92,7 @@ The project is intended to be deployed on Vercel with a custom domain.
 
 🚧 Work in progress — actively being developed as part of a larger vision for a ZKP-focused platform.
 
-🤝 Contributing
+Contributing
 ---------------
 
 Currently a personal project. Contributions may be opened in the future.
