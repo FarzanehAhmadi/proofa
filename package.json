@@ -11,9 +11,11 @@
   "dependencies": {
     "@portabletext/react": "^6.0.3",
     "@radix-ui/react-visually-hidden": "^1.2.4",
+    "@rainbow-me/rainbowkit": "^2.2.10",
     "@sanity/client": "^7.17.0",
     "@sanity/image-url": "^2.0.3",
     "@sanity/vision": "^5.16.0",
+    "@tanstack/react-query": "^5.90.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.34.3",
@@ -28,7 +30,9 @@
     "react-dom": "19.2.3",
     "sanity": "^5.16.0",
     "sanity-plugin-latex-input": "^2.0.7",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "viem": "^2.48.1",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
