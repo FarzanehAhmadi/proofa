@@ -22,9 +22,9 @@ export default function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-[65ch] text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl">
-            Expert post-quantum consultancy for blockchain and cryptography. We
-            help organisations navigate blockchain technology and prepare for
-            the quantum computing era with quantum-resistant solutions.
+            Expert ZKP consultancy for blockchain and cryptography. We help
+            organisations navigate blockchain technology and prepare for the
+            quantum computing era with quantum-resistant solutions.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:mt-12 sm:flex-row sm:justify-center sm:gap-6">
@@ -32,7 +32,7 @@ export default function Hero() {
               className="w-full rounded-full text-base sm:w-auto sm:text-lg"
               size="lg"
             >
-              Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
+              Contact US <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
 
             <Button
@@ -40,7 +40,7 @@ export default function Hero() {
               size="lg"
               variant="outline"
             >
-              Explore Services
+              dApp Services
             </Button>
           </div>
         </div>
