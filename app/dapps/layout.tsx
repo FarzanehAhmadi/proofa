@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Web3Provider from "@/components/provider/Web3Provider";
 

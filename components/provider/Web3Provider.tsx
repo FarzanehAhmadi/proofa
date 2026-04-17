@@ -5,12 +5,12 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import { mainnet } from "wagmi/chains";
+import { sepolia } from "wagmi/chains";
 
 const config = getDefaultConfig({
   appName: "Proofa",
-  projectId: "demo", // later you can add walletconnect id
-  chains: [mainnet],
+  projectId: "b358e1212b4ad479e1d418e1059e858c", // later you can add walletconnect id
+  chains: [sepolia],
 });
 
 const queryClient = new QueryClient();
