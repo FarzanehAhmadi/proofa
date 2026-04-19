@@ -12,17 +12,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  webpack: (config) => {
-    config.watchOptions = {
-      ignored: [
-        "**/contracts/**",
-        "**/ignition/**",
-        "**/test/**",
-        "**/typechain-types/**",
-      ],
-    };
-    return config;
-  },
+  turbopack: {},
 };
 
 module.exports = nextConfig;
