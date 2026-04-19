@@ -1,4 +1,41 @@
 {
   "_format": "hh-sol-cache-2",
-  "files": {}
+  "files": {
+    "D:\\Study\\Coding\\Proofa\\proofa\\contracts\\ProofOfExistence.sol": {
+      "lastModificationDate": 1776627890232,
+      "contentHash": "73e66cc5a7e774795590ff473c54ce9e",
+      "sourceName": "contracts/ProofOfExistence.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "ProofOfExistence"
+      ]
+    }
+  }
 }
