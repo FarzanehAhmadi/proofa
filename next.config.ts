@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -11,6 +11,17 @@ const nextConfig = {
         pathname: "/images/**",
       },
     ],
+  },
+  webpack: (config) => {
+    config.watchOptions = {
+      ignored: [
+        "**/contracts/**",
+        "**/ignition/**",
+        "**/test/**",
+        "**/typechain-types/**",
+      ],
+    };
+    return config;
   },
 };
 
