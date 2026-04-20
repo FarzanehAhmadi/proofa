@@ -9,12 +9,12 @@
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "types": ["hardhat/types", "@nomicfoundation/hardhat-ethers/types"]
   },
   "include": [
     "hardhat.config.ts",
     "contracts/**/*",
-    "ignition/**/*",
     "scripts/**/*",
     "test/**/*"
   ],
