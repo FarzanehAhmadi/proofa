@@ -23,7 +23,7 @@ export default function DappHub() {
                 {/* Icon */}
                 <div className="w-fit shrink-0 rounded-3xl bg-transparent p-1">
                   <div className="relative border bg-background flex items-center justify-center w-16 h-16">
-                    <app.icon className="text-2xl text-purple-700" />
+                    <app.icon className="text-2xl text-primary" />
                   </div>
                 </div>
 
